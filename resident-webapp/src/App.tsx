@@ -12,8 +12,8 @@ import Login from './pages/Login';
 import ViewActualVisit from './pages/ViewActualVisit';
 
 const authConfig = {
-    "baseUrl": "https://api.asgardeo.io/t/architecturemindmeld",
-    "clientID": "nzsVQ5DJMfS8530VnrhJufYXTJMa",
+    "baseUrl": "https://api.asgardeo.io/t/choreoplayground",
+    "clientID": "rN96WXA313EWJ0fRQrLfAK5SnnIa",
     "scope": [
         "openid",
         "profile",
