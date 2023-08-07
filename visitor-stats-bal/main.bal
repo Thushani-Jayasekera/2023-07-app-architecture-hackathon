@@ -12,6 +12,7 @@ configurable string visitStatAPIUrl = ?;
 configurable string visitStatAPITokenURL = ?;
 configurable string visitStatAPIConsumerKey = ?;
 configurable string visitStatAPIConsumerSecret = ?;
+
 configurable string visitStatAPIUsername = ?;
 configurable string visitStatAPIUserPassword = ?;
 configurable string[] visitStatAPIScopes = ?;
