@@ -12,6 +12,9 @@ configurable string visitStatAPIUrl = ?;
 configurable string visitStatAPITokenURL = ?;
 configurable string visitStatAPIConsumerKey = ?;
 configurable string visitStatAPIConsumerSecret = ?;
+configurable string visitStatAPIUsername = ?;
+configurable string visitStatAPIUserPassword = ?;
+configurable string visitStatAPIScopes = ?;
 
 // Configuring Google Sheets API
 sheets:ConnectionConfig spreadsheetConfig = {
@@ -69,7 +72,11 @@ public function main() {
         auth = {
             tokenUrl: visitStatAPITokenURL,
             clientId: visitStatAPIConsumerKey,
-            clientSecret: visitStatAPIConsumerSecret
+            clientSecret: visitStatAPIConsumerSecret,
+            username: visitStatAPIUsername,
+            password: visitStatAPIUserPassword,
+            scopes: visitStatAPIScopes
+
         }
     );
     if visitClient is error {
